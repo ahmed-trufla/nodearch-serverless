@@ -11,10 +11,10 @@ npm run build
 npm run dev
 ```
 
-Base URL:  http://localhost:4000
+Base URL:  http://localhost:4000             
 
-POST http://localhost:4000/client-management/clients
-POST http://localhost:4000/client-management/client/search
-GET http://localhost:4000/client-management/clients/:key
-PATCH http://localhost:4000/client-management/clients/:key
-DELETE http://localhost:4000/client-management/clients/:key
+- POST http://localhost:4000/client-management/clients       
+- POST http://localhost:4000/client-management/client/search         
+- GET http://localhost:4000/client-management/clients/:key        
+- PATCH http://localhost:4000/client-management/clients/:key        
+- DELETE http://localhost:4000/client-management/clients/:key        
