@@ -25,13 +25,18 @@ provider:
     cors: true
 
 functions:
-  app:
-    handler: dist/handler.handler
+  client:
+    handler: dist/handlers/client-handler.handler
     events:
     - httpApi:
-        path: '/{proxy+}'
+        path: '/client-management/{proxy+}'
         method: '*'
-
+  user:
+    handler: dist/handlers/user-handler.handler
+    events:
+    - httpApi:
+        path: '/user-management/{proxy+}'
+        method: '*'
 
 package:
   exclude:

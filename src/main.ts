@@ -7,7 +7,7 @@ import { ExpressService } from '@nodearch/express/dist/components/express.servic
 import { restConfig } from './config';
 
 
-export default class TruMarket extends App {
+export default class TruWeb extends App {
   constructor() {
     super({
       defaultScope: ComponentScope.Request,

@@ -4,7 +4,8 @@
   "description": "Serverless framework Noderarch",
   "scripts": {
     "build": "rimraf ./dist/ && tsc",
-    "dev": "sls offline start --stage offline",
+    "start": "npm run build && node dist/start.js",
+    "sls": "npm run build && sls offline start --stage offline",
     "tail-log": "sls logs -f app -t",
     "deploy-prod": "sls deploy --stage prod",
     "remove-prod": "sls remove --stage prod",

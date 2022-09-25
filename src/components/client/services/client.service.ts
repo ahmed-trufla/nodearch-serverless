@@ -20,7 +20,7 @@ export class ClientService {
     return { data: [], paging: options };
   }
 
-  getClient(clientKey: string, options: IClientInfoQuery){
+  getClient(clientKey: string, options: IClientInfoQuery) {
     return { key: clientKey, name: 'Test' };
   }
 
